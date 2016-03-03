@@ -3,7 +3,7 @@ Creado por dM
 
 ##Versiones
 
-- rvm=2.2
+- rails=4.2.4
 - ruby=2.2.1
 
 ##Descripción
@@ -18,7 +18,7 @@ sobre los datos, utilizamos sqlite3 para manejarlos.
 
 ##Instalación
 
-- Tener instalado ruby=2.2.1 o superior
+- Tener instalado ruby=2.2.1 o superior y rails 4.2.4 o superior
 - Dentro del directorio del proyecto, ejecutar
 el servidor de pruebas:
 ```
