@@ -1,0 +1,1950 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 10:11:57 -0430
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 24ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 10:12:01 -0430
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (150.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (132.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateAlumnos (20160303144430)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "alumnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "apellido" varchar, "cedula" varchar, "correo" varchar, "telefono" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160303144430"]]
+  [1m[35m (165.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 10:14:59 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 21ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro" for 127.0.0.1 at 2016-03-03 10:15:04 -0430
+
+ActionController::RoutingError (No route matches [GET] "/registro"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/diaspora/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/diaspora/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/diaspora/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.4ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/alumno" for 127.0.0.1 at 2016-03-03 10:15:11 -0430
+
+ActionController::RoutingError (No route matches [GET] "/alumno"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/diaspora/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/diaspora/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/diaspora/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.8ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/diaspora/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.5ms)
+
+
+Started GET "/alumnos" for 127.0.0.1 at 2016-03-03 10:15:15 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1220ms (Views: 1216.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:15:16 -0430
+
+
+Started GET "/assets/scaffolds.self-80783cb78724082b9d78318849755c481fab547898661e615a665c606173c105.css?body=1" for 127.0.0.1 at 2016-03-03 10:15:16 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:15:16 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:15:19 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (6.0ms)
+  Rendered alumnos/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/alumnos" for 127.0.0.1 at 2016-03-03 10:15:49 -0430
+Processing by AlumnosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W16wNfFEEVpSl24BXxI0Er6C98TjuD7YKs6e94JcJ4ol8vbBJwWzqb7u0CwKI1oygNybGUAayIPaqsjqPqaLZA==", "alumno"=>{"nombre"=>"argenis", "apellido"=>"osorio", "cedula"=>"18902230", "correo"=>"aosorio@correo.com", "telefono"=>"04263314899"}, "commit"=>"Create Alumno"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "alumnos" ("nombre", "apellido", "cedula", "correo", "telefono", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["nombre", "argenis"], ["apellido", "osorio"], ["cedula", "18902230"], ["correo", "aosorio@correo.com"], ["telefono", "04263314899"], ["created_at", "2016-03-03 14:45:49.726515"], ["updated_at", "2016-03-03 14:45:49.726515"]]
+  [1m[36m (220.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/alumnos/1
+Completed 302 Found in 229ms (ActiveRecord: 220.8ms)
+
+
+Started GET "/alumnos/1" for 127.0.0.1 at 2016-03-03 10:15:49 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlumno Load (0.4ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered alumnos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/alumnos/1/edit" for 127.0.0.1 at 2016-03-03 10:15:53 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered alumnos/_form.html.erb (2.7ms)
+  Rendered alumnos/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/alumnos" for 127.0.0.1 at 2016-03-03 10:15:55 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:15:58 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (5.3ms)
+  Rendered alumnos/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alumnos" for 127.0.0.1 at 2016-03-03 10:15:59 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.3ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:18:20 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (5.6ms)
+  Rendered alumnos/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (4.7ms)
+  Rendered alumnos/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/scaffolds.self-ad04c5109339afbdf1c23649f2ee9e14819ef4ec1f682d1f63a537ad1a0d7fd2.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:13 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:20:19 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:20:21 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (2.5ms)
+  Rendered alumnos/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alumnos/1" for 127.0.0.1 at 2016-03-03 10:20:23 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered alumnos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/alumnos/1/edit" for 127.0.0.1 at 2016-03-03 10:20:23 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlumno Load (0.1ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered alumnos/_form.html.erb (2.7ms)
+  Rendered alumnos/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/scaffolds.self-684ec747e642325834f8964d17c8bfc00b9aef6ecb6e54984534f999ff10ed0d.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:41 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.4ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/scaffolds.self-1b0124e180966cbf5bfe5306c0a37e0534828b26bfa1a84c9607c301eb53590a.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:20:49 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/scaffolds.self-c4a5837658954d2a09e4c93e82a1f95e87552a34df305eeb1c957b46867abfc9.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:03 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.4ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/scaffolds.self-d745f78f16a76f0372642c0f3c820263b42953eb54e0dcc12fc80b66540d84ab.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:13 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:32 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:34 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (5.1ms)
+  Rendered alumnos/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:35 -0430
+
+
+Started GET "/alumnos/1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered alumnos/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:38 -0430
+
+
+Started GET "/alumnos/1/edit" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered alumnos/_form.html.erb (3.0ms)
+  Rendered alumnos/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:21:39 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:21 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-d6ffbc80165cb9985d722a1b2a7e3a942954fb4b5ccec14391200aac2592eb0c.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:43 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-1cfed4ff60a5ef41eff01e8047af4a066629af30ac49b32ad97a4095f6fd4529.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:22:59 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-837b53179561974047bf1fd8291153eb11493f0a3f5f496f3814574df2bb9768.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:04 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-fa59ea09bebee1ea9e4be3ae103b4ee58e18177d146ee6b777acdb6fbcfd5258.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:17 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-a135393387dc1b5d2d746728d3bbcd666ec8574cb4ab8c63b2e14c71f23f2cdc.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:31 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-a135393387dc1b5d2d746728d3bbcd666ec8574cb4ab8c63b2e14c71f23f2cdc.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:32 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-45ad70aaa14a88c2779fd1480e69071a83fefc6034d956c07ddb33c95d291b4f.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:42 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-45ad70aaa14a88c2779fd1480e69071a83fefc6034d956c07ddb33c95d291b4f.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:43 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-bd767274bde1f36c52fb7e2470b78c35788e176562a3b92421414c5d9aeb1269.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:23:51 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-9b6cab553d9618e60295f198042ac1b943cf64294cab0468f78871603213a6d0.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:06 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-3df7f1f6ded01c9a9d41a87f173c3e4de36822364414680c1eb253fd3aa9ad94.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:15 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7b38db97dbd9840317c7d645efb871f6f73e3addc6b6461fcbf6d76094c9bfe0.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:30 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-d686f2eb253d8aef7c856b7bf8ae0d384143ebeae373077f46a1a0e4711faef1.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:34 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.3ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-ba4233b24804110c67ad15858265a344aa4efea2007348552421aaa910533eb5.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:24:51 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.4ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/alumnos.self-22bae4bebef7307dddd7b9af60ef803a3181dc9895b0bf2c67bd2d13a9c48e78.css?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:00 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.3ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:25:07 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:04 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (3.9ms)
+  Rendered alumnos/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:05 -0430
+
+
+Started GET "/alumnos/1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered alumnos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:07 -0430
+
+
+Started GET "/alumnos/1/edit" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered alumnos/_form.html.erb (4.5ms)
+  Rendered alumnos/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:09 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.4ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:19 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:29 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.3ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:39 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:56 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:57 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:26:58 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:02 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:05 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:18 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.2ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:38 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:27:49 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.3ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:27:50 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:11 -0430
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:25 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (5.2ms)
+  Rendered alumnos/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:31 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:32 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:32 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (2.7ms)
+  Rendered alumnos/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:39 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (2.5ms)
+  Rendered alumnos/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:28:52 -0430
+
+
+Started GET "/alumnos/1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlumno Load (0.1ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered alumnos/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:12 -0430
+
+
+Started GET "/alumnos/1/edit" for 127.0.0.1 at 2016-03-03 10:29:28 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered alumnos/_form.html.erb (3.8ms)
+  Rendered alumnos/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:29 -0430
+
+
+Started GET "/alumnos/1/edit" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered alumnos/_form.html.erb (3.0ms)
+  Rendered alumnos/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:29:39 -0430
+
+
+Started GET "/alumnos/1" for 127.0.0.1 at 2016-03-03 10:29:42 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered alumnos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:37:34 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:37:40 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (3.6ms)
+  Rendered alumnos/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 10:47:05 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/alumnos.self-7235175ee896fe53ab888555fca467500aa6efe265fbbe03c05c6b0d3d6e0fb7.css?body=1" for 127.0.0.1 at 2016-03-03 10:47:05 -0430
+
+
+Started GET "/assets/scaffolds.self-4d5f2a386503082143e6fb0f9febdee17e01aeaac589815c88fe89288288fcc6.css?body=1" for 127.0.0.1 at 2016-03-03 10:47:05 -0430
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 10:47:06 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-03-03 10:47:06 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-03-03 10:47:06 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 10:47:06 -0430
+
+
+Started GET "/assets/alumnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-03 10:47:06 -0430
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 10:47:06 -0430
+
+
+Started GET "/alumnos/new" for 127.0.0.1 at 2016-03-03 10:47:08 -0430
+Processing by AlumnosController#new as HTML
+  Rendered alumnos/_form.html.erb (4.2ms)
+  Rendered alumnos/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/alumnos" for 127.0.0.1 at 2016-03-03 10:47:33 -0430
+Processing by AlumnosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PmJ+RmVoZ2ahv8ElLkSqoN7TANE63+7LlVALPYWn70pAzjiysynFlU3Gfwh7dcSA4I1sDJl9GJBlNF0gOV1DpA==", "alumno"=>{"nombre"=>"mari", "apellido"=>"parra", "cedula"=>"8035499", "correo"=>"marip@correo.com", "telefono"=>"02747789545"}, "commit"=>"Create Alumno"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "alumnos" ("nombre", "apellido", "cedula", "correo", "telefono", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "mari"], ["apellido", "parra"], ["cedula", "8035499"], ["correo", "marip@correo.com"], ["telefono", "02747789545"], ["created_at", "2016-03-03 15:17:33.202339"], ["updated_at", "2016-03-03 15:17:33.202339"]]
+  [1m[35m (221.1ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/alumnos/2
+Completed 302 Found in 227ms (ActiveRecord: 221.5ms)
+
+
+Started GET "/alumnos/2" for 127.0.0.1 at 2016-03-03 10:47:33 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlumno Load (0.5ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered alumnos/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/alumnos/2/edit" for 127.0.0.1 at 2016-03-03 10:47:41 -0430
+Processing by AlumnosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlumno Load (0.1ms)[0m  SELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered alumnos/_form.html.erb (3.0ms)
+  Rendered alumnos/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/alumnos/2" for 127.0.0.1 at 2016-03-03 10:47:46 -0430
+Processing by AlumnosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QlXiYOQhYp7drdeN/roc/OwUhmzfsD/XubrXb3Mm1VE8+aSUMmDAbTHUaaCri3Lc0krqsXwSyYxJ3oFyz9x5vw==", "alumno"=>{"nombre"=>"mari", "apellido"=>"parra", "cedula"=>"8035499", "correo"=>"marip@correo.com", "telefono"=>"02747789546"}, "commit"=>"Update Alumno", "id"=>"2"}
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "alumnos" SET "telefono" = ?, "updated_at" = ? WHERE "alumnos"."id" = ?[0m  [["telefono", "02747789546"], ["updated_at", "2016-03-03 15:17:46.326940"], ["id", 2]]
+  [1m[35m (245.0ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/alumnos/2
+Completed 302 Found in 251ms (ActiveRecord: 245.6ms)
+
+
+Started GET "/alumnos/2" for 127.0.0.1 at 2016-03-03 10:47:46 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlumno Load (0.2ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered alumnos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alumnos" for 127.0.0.1 at 2016-03-03 10:47:51 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alumnos/2" for 127.0.0.1 at 2016-03-03 10:47:55 -0430
+Processing by AlumnosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlumno Load (0.1ms)[0m  [1mSELECT  "alumnos".* FROM "alumnos" WHERE "alumnos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered alumnos/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/alumnos/" for 127.0.0.1 at 2016-03-03 11:23:43 -0430
+Processing by AlumnosController#index as HTML
+  [1m[35mAlumno Load (0.3ms)[0m  SELECT "alumnos".* FROM "alumnos"
+  Rendered alumnos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alumnos" for 127.0.0.1 at 2016-03-03 11:33:29 -0430
+Processing by AlumnosController#index as HTML
+  [1m[36mAlumno Load (0.3ms)[0m  [1mSELECT "alumnos".* FROM "alumnos"[0m
+  Rendered alumnos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms)

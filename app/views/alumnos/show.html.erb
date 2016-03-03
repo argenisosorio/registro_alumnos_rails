@@ -1,0 +1,25 @@
+<div id="cuerpo">
+  <p id="notice"><%= notice %></p>
+  <p>
+    <strong>Nombre:</strong>
+    <%= @alumno.nombre %>
+  </p>
+  <p>
+    <strong>Apellido:</strong>
+    <%= @alumno.apellido %>
+  </p>
+  <p>
+    <strong>Cedula:</strong>
+    <%= @alumno.cedula %>
+  </p>
+  <p>
+    <strong>Correo:</strong>
+    <%= @alumno.correo %>
+  </p>
+  <p>
+    <strong>Telefono:</strong>
+    <%= @alumno.telefono %>
+  </p>
+  <%= link_to 'Editar', edit_alumno_path(@alumno) %> |
+  <%= link_to 'Atrás', alumnos_path %>
+</div>
