@@ -5,6 +5,7 @@ class AlumnosController < ApplicationController
   # GET /alumnos.json
   def index
     @alumnos = Alumno.all
+    @user = "aosorio" #Declaramos una variable y luego la invocamos en el index
   end
 
   # GET /alumnos/1
